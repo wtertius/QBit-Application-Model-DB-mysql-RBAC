@@ -1,12 +1,14 @@
-Source: libqbit-application-model-db-mysql-rbac-perl
+Source: libtertiusqbit-application-model-db-mysql-rbac-perl
 Section: perl
 Priority: extra
-Maintainer: Sergei Svistunov <sergei-svistunov@yandex.ru>
-Build-Depends: debhelper (>= 8.0.0), perl, libqbit-perl, libqbit-application-model-rbac-db-perl, libqbit-application-model-db-mysql-perl
+Maintainer: Dmitry Lukiyanchuk <wtertius@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), perl, libtertiusqbit-perl, libtertiusqbit-application-model-rbac-db-perl, libtertiusqbit-application-model-db-mysql-perl
 Standards-Version: 3.9.4
 
-Package: libqbit-application-model-db-mysql-rbac-perl
+Package: libtertiusqbit-application-model-db-mysql-rbac-perl
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libqbit-perl, libqbit-application-model-rbac-db-perl, libqbit-application-model-db-mysql-perl
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${perl:Depends}, perl, libtertiusqbit-perl, libtertiusqbit-application-model-rbac-db-perl, libtertiusqbit-application-model-db-mysql-perl
+Conflicts: libqbit-application-model-db-mysql-rbac-perl
+Replaces: libqbit-application-model-db-mysql-rbac-perl
 Description: MySQL tables for QBit::Application::Model::RBAC::DB.
  MySQL tables for QBit::Application::Model::RBAC::DB.
